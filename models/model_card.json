@@ -1,0 +1,64 @@
+{
+  "n_rows": 538,
+  "class_counts": {
+    "Moderately Aggressive": 239,
+    "Aggressive": 208,
+    "Moderate": 79,
+    "Conservative": 12
+  },
+  "cv_f1_macro": 0.878,
+  "cv_balanced_acc": 0.921,
+  "cv_accuracy": 0.907,
+  "holdout_report": {
+    "Aggressive": {
+      "precision": 0.9333333333333333,
+      "recall": 1.0,
+      "f1-score": 0.9655172413793104,
+      "support": 42.0
+    },
+    "Conservative": {
+      "precision": 0.6666666666666666,
+      "recall": 1.0,
+      "f1-score": 0.8,
+      "support": 2.0
+    },
+    "Moderate": {
+      "precision": 0.8823529411764706,
+      "recall": 0.9375,
+      "f1-score": 0.9090909090909091,
+      "support": 16.0
+    },
+    "Moderately Aggressive": {
+      "precision": 1.0,
+      "recall": 0.8958333333333334,
+      "f1-score": 0.945054945054945,
+      "support": 48.0
+    },
+    "accuracy": 0.9444444444444444,
+    "macro avg": {
+      "precision": 0.8705882352941177,
+      "recall": 0.9583333333333334,
+      "f1-score": 0.9049157738812912,
+      "support": 108.0
+    },
+    "weighted avg": {
+      "precision": 0.9504720406681192,
+      "recall": 0.9444444444444444,
+      "f1-score": 0.9449982967224346,
+      "support": 108.0
+    }
+  },
+  "feature_importance": {
+    "n__objective_fl_pct": 0.2748,
+    "c__annual_income_bracket_Less than 3 Lakhs": 0.1523,
+    "c__annual_income_bracket_More than 10 lakhs": 0.1372,
+    "c__annual_income_bracket_3 to 6 Lakhs": 0.0924,
+    "n__anchoring_bias_score": 0.0316,
+    "n__loss_aversion_score": 0.0297,
+    "n__herding_bias_score": 0.0285,
+    "c__annual_income_bracket_6 to 10 lakhs": 0.027,
+    "n__cultural_influence_score": 0.0246,
+    "n__risk_coverage_motive": 0.0229
+  },
+  "note": "Labels are rule-derived (capacity x tolerance) and behavioural scores are stratum means (gender x experience), so this model mirrors the rule engine; it is a cross-check, not independent validation."
+}
